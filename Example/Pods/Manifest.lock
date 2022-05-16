@@ -1,0 +1,16 @@
+PODS:
+  - mChat (0.1.0)
+
+DEPENDENCIES:
+  - mChat (from `../`)
+
+EXTERNAL SOURCES:
+  mChat:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  mChat: 71e4a03fc7674a1bbdc8b4eec2d1470232cb6b02
+
+PODFILE CHECKSUM: 58ee3e497bced0724312a9a7e0b2e7a19297a4da
+
+COCOAPODS: 1.11.0.beta.2

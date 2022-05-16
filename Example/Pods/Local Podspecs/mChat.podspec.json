@@ -1,0 +1,22 @@
+{
+  "name": "mChat",
+  "version": "0.1.0",
+  "summary": "A short description of mChat.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/pranjal7163/mChat",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "pranjal7163": "pranjal.3vyas@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/pranjal7163/mChat.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "mChat/Classes/**/*"
+}

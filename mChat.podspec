@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'mChat/Classes/**/*'
-  
+  s.resources = "mChat/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
   # s.resource_bundles = {
   #   'mChat' => ['mChat/Assets/*.png']
   # }
