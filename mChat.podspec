@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'mChat'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of mChat.'
+  s.summary          = 'mChat is SDK for IOS for mehery chat'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,20 +21,21 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/pranjal7163/mChat'
+  s.homepage         = 'https://github.com/mehery-soccom/mChat-IOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'pranjal7163' => 'pranjal.3vyas@gmail.com' }
-  s.source           = { :git => 'https://github.com/pranjal7163/mChat.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/mehery-soccom/mChat-IOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
+  s.swift_version = '4.1'
 
   s.source_files = 'mChat/Classes/**/*'
-  s.resources = "mChat/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
-  # s.resource_bundles = {
-  #   'mChat' => ['mChat/Assets/*.png']
-  # }
+#  s.resources = "mChat/**/*.{png,storyboard}"
+#   s.resource_bundles = {
+#     'mChat' => ['mChat/*/*.{storyboard}']
+#   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

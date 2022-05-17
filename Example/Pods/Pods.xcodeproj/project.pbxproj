@@ -14,6 +14,9 @@
 		1E39E8B5282ECE1E00259C6D /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E39E8B4282ECE1E00259C6D /* MChat.swift */; };
 		1E39E8B72832AF2B00259C6D /* MConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E39E8B62832AF2B00259C6D /* MConfig.swift */; };
 		1E39E8BB2832C87D00259C6D /* cancel (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 1E39E8BA2832C87D00259C6D /* cancel (1).png */; };
+		1E39E8C0283349CB00259C6D /* Readme1.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1E39E8BD283349CB00259C6D /* Readme1.PNG */; };
+		1E39E8C1283349CB00259C6D /* Readme2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1E39E8BE283349CB00259C6D /* Readme2.PNG */; };
+		1E39E8C2283349CB00259C6D /* Readme3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1E39E8BF283349CB00259C6D /* Readme3.PNG */; };
 		576777C3493F60CD6A29CEF243AE3476 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		8940F94DC1F0E12A66FB13309FE9BBCB /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC517624F717ECBC847A287CF5561B5 /* ReplaceMe.swift */; };
 		99F8E844EDC97634E9AE7A32CC33EFC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -50,6 +53,9 @@
 		1E39E8B4282ECE1E00259C6D /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
 		1E39E8B62832AF2B00259C6D /* MConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MConfig.swift; sourceTree = "<group>"; };
 		1E39E8BA2832C87D00259C6D /* cancel (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel (1).png"; sourceTree = "<group>"; };
+		1E39E8BD283349CB00259C6D /* Readme1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Readme1.PNG; sourceTree = "<group>"; };
+		1E39E8BE283349CB00259C6D /* Readme2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Readme2.PNG; sourceTree = "<group>"; };
+		1E39E8BF283349CB00259C6D /* Readme3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Readme3.PNG; sourceTree = "<group>"; };
 		326FCD4247597B6D1B5CEBAAD38EF38F /* mChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = mChat.release.xcconfig; sourceTree = "<group>"; };
 		3A2D7E8F775378F07A7381A44254EF54 /* mChat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = mChat.modulemap; sourceTree = "<group>"; };
 		483578909B36C477E13C0DFC3D165A9F /* mChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "mChat-dummy.m"; sourceTree = "<group>"; };
@@ -110,9 +116,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E39E8BC283348B600259C6D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1E39E8BD283349CB00259C6D /* Readme1.PNG */,
+				1E39E8BE283349CB00259C6D /* Readme2.PNG */,
+				1E39E8BF283349CB00259C6D /* Readme3.PNG */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		44A305D905FB9EE14AEC4B07EACE2B55 /* mChat */ = {
 			isa = PBXGroup;
 			children = (
+				1E39E8BC283348B600259C6D /* images */,
 				1E39E8B4282ECE1E00259C6D /* MChat.swift */,
 				1E39E8B62832AF2B00259C6D /* MConfig.swift */,
 				1E39E8B0282ECA5700259C6D /* MChatViewController.swift */,
@@ -358,7 +375,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E39E8C0283349CB00259C6D /* Readme1.PNG in Resources */,
 				1E39E8B3282ECA7700259C6D /* mChatStoryboard.storyboard in Resources */,
+				1E39E8C2283349CB00259C6D /* Readme3.PNG in Resources */,
+				1E39E8C1283349CB00259C6D /* Readme2.PNG in Resources */,
 				1E39E8BB2832C87D00259C6D /* cancel (1).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
