@@ -48,17 +48,19 @@ let config = MConfig.init(headerTitle: headerTitleText)
 
 For further customization :
 
-Attribute | Description | Default Value
---- | --- | --- 
-|headerColor|This is for chaning color of the header|#FFFFFF|
-|headerTitleColoe|This is for changing color of the title of the header|#000000|
-|chatBackgroundColor|This is for changing background color of tha chat message listing|#FFFFFF|
-|sentMessageBubbleColor|This is to change the bacground color of chat bubble for sent messages|#FE8BFF|
-|sentMessageTextColor|This is to change the text color of the sent messages|#FFFFFF|
-|receivedMessageBubbleColor|This is to change the bacground color of chat bubble for received messages|#ECECEC|
-|receivedMessageTextColor|This is to change the text color of the received messages|#000000|
-|userInputBackgroundColor|This is to change the background color of the user input box at bottom|#FFFFFF|
-|userInputTextColor|This is to change the text color of the user input box at bottom|#000000|
+eg. config.headerColor = UIColor.white
+
+Attribute | Value | Description | Default Value
+--- | --- | --- | --- 
+|headerColor|UIColor|This is for chaning color of the header|#FFFFFF|
+|headerTitleColoe|UIColor|This is for changing color of the title of the header|#000000|
+|chatBackgroundColor|UIColor|This is for changing background color of tha chat message listing|#FFFFFF|
+|sentMessageBubbleColor|UIColor|This is to change the bacground color of chat bubble for sent messages|#FE8BFF|
+|sentMessageTextColor|UIColor|This is to change the text color of the sent messages|#FFFFFF|
+|receivedMessageBubbleColor|UIColor|This is to change the bacground color of chat bubble for received messages|#ECECEC|
+|receivedMessageTextColor|UIColor|This is to change the text color of the received messages|#000000|
+|userInputBackgroundColor|UIColor|This is to change the background color of the user input box at bottom|#FFFFFF|
+|userInputTextColor|UIColor|This is to change the text color of the user input box at bottom|#000000|
 
 To check the flow and test, please clone this repository and check out the sample app.
 
