@@ -64,9 +64,6 @@ Attribute | Value | Description | Default Value
 
 To check the flow and test, please clone this repository and check out the sample app.
 
-## Author
-
-pranjal7163, pranjal.3vyas@gmail.com
 
 ## License
 
