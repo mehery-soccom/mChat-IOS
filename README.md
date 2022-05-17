@@ -1,7 +1,7 @@
-# mChat - Android
+# mChat - IOS
 ## _Chat SDK for Mehery_
 
-mChat - Android is a an android SDK for enabling to add Mehery Chat in you application.
+mChat - IOS is a an IOS SDK for enabling to add Mehery Chat in you application.
 
 ## Features
 
