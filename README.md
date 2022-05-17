@@ -48,7 +48,8 @@ let config = MConfig.init(headerTitle: headerTitleText)
 
 For further customization :
 
-| Attribute | Description | Default Value |
+Attribute | Description | Default Value
+--- | --- | --- 
 |headerColor|This is for chaning color of the header|#FFFFFF|
 |headerTitleColoe|This is for changing color of the title of the header|#000000|
 |chatBackgroundColor|This is for changing background color of tha chat message listing|#FFFFFF|
