@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'mChat'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'mChat is SDK for IOS for mehery chat'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.1'
 
-  s.source_files = 'mChat/*.{swift}'
+  s.source_files = 'mChat/Classes/**/*'
 #  s.resources = "mChat/**/*.{png,storyboard}"
 #   s.resource_bundles = {
 #     'mChat' => ['mChat/*/*.{storyboard}']
