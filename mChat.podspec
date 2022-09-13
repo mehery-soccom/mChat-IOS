@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'mChat'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'mChat is SDK for IOS for mehery chat'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/mehery-soccom/mChat-IOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'pranjal7163' => 'pranjal.3vyas@gmail.com' }
+  s.author           = { 'mehery-soccom' => 'mehery.com@gmail.com' }
   s.source           = { :git => 'https://github.com/mehery-soccom/mChat-IOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
