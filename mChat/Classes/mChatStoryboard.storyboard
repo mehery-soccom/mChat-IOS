@@ -105,6 +105,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="closeButton" destination="LXL-VN-QQi" id="Hq2-gl-4p7"/>
                         <outlet property="headerImage" destination="10G-8r-jdg" id="K3o-AS-vPS"/>
                         <outlet property="headerTitle" destination="QY0-fB-nAX" id="8Wh-1F-7oG"/>
                         <outlet property="headerView" destination="qDy-PC-iet" id="PpB-9c-HIc"/>

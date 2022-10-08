@@ -48,10 +48,10 @@
 		0116845DDFA198BD9B16CCBF7279A019 /* Pods-mChat_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mChat_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		02945F027EFFC63BDC8C5169B5AA458D /* Pods-mChat_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mChat_Tests-Info.plist"; sourceTree = "<group>"; };
 		0D9450EAFF219CEB4D012EA46F8A170D /* Pods-mChat_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-mChat_Example"; path = Pods_mChat_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E39E8B0282ECA5700259C6D /* MChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChatViewController.swift; sourceTree = "<group>"; };
-		1E39E8B2282ECA7700259C6D /* mChatStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mChatStoryboard.storyboard; sourceTree = "<group>"; };
-		1E39E8B4282ECE1E00259C6D /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
-		1E39E8B62832AF2B00259C6D /* MConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MConfig.swift; sourceTree = "<group>"; };
+		1E39E8B0282ECA5700259C6D /* MChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MChatViewController.swift; path = mChat/Classes/MChatViewController.swift; sourceTree = "<group>"; };
+		1E39E8B2282ECA7700259C6D /* mChatStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = mChatStoryboard.storyboard; path = mChat/Classes/mChatStoryboard.storyboard; sourceTree = "<group>"; };
+		1E39E8B4282ECE1E00259C6D /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MChat.swift; path = mChat/Classes/MChat.swift; sourceTree = "<group>"; };
+		1E39E8B62832AF2B00259C6D /* MConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MConfig.swift; path = mChat/Classes/MConfig.swift; sourceTree = "<group>"; };
 		1E39E8BA2832C87D00259C6D /* cancel (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel (1).png"; sourceTree = "<group>"; };
 		1E39E8BD283349CB00259C6D /* Readme1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Readme1.PNG; sourceTree = "<group>"; };
 		1E39E8BE283349CB00259C6D /* Readme2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Readme2.PNG; sourceTree = "<group>"; };

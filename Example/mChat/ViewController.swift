@@ -40,9 +40,9 @@ class ViewController: UIViewController {
     }
     
     func setView(){
-        domainTV.text = "pranjal.mehery.io"
-        channelIdTV.text = "web:pranjal.mehery.io"
-        channelKeyTV.text = "1gntxihfyriyq1CGRJX3SAM"
+        domainTV.text = "demo.mehery.xyz"
+        channelIdTV.text = "web:mainsite"
+        channelKeyTV.text = "1g8kjp23sj8qxQE8QY2T89U"
         headerTitleTV.text = "Support"
     }
 
@@ -110,10 +110,15 @@ class ViewController: UIViewController {
             
             
             
+            MChat.init().start(domain: domainTV.text!, channelKey: channelKeyTV.text!, channelId: channelIdTV.text!,logo: UIImage.init(named: "robot")!,config: config,closeIcon: UIImage.init(named: "robot")!, viewController: self)
+            
         }
         
         
     }
+    
+    
+    
     func invokeColorPicker(tappedView : UIView){
         picker.selectedColor = tappedView.backgroundColor!
         self.present(picker, animated: false, completion: nil)
