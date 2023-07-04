@@ -1,5 +1,5 @@
 PODS:
-  - mChat (0.1.0)
+  - mChat (0.1.4)
 
 DEPENDENCIES:
   - mChat (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  mChat: 71e4a03fc7674a1bbdc8b4eec2d1470232cb6b02
+  mChat: cc614b9f08a2a8572e9bc9df1b60a07208906bb1
 
 PODFILE CHECKSUM: 58ee3e497bced0724312a9a7e0b2e7a19297a4da
 
-COCOAPODS: 1.11.0.beta.2
+COCOAPODS: 1.12.0

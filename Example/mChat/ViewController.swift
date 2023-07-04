@@ -40,9 +40,9 @@ class ViewController: UIViewController {
     }
     
     func setView(){
-        domainTV.text = "pranjal.mehery.io"
-        channelIdTV.text = "web:pranjal.mehery.io"
-        channelKeyTV.text = "1gntxihfyriyq1CGRJX3SAM"
+        domainTV.text = "almullaexchange.mehery.com"
+        channelIdTV.text = "web:onlineapp"
+        channelKeyTV.text = "1gzrmyly9nsafL8SA7KA0VI"
         headerTitleTV.text = "Support"
     }
 
@@ -108,7 +108,8 @@ class ViewController: UIViewController {
             config.userInputBackgroundColor = userInputBackgroundColor.backgroundColor
             config.userInputTextColor = userInputTextColor.backgroundColor
             
-            
+            MChat.init().start(domain: domainTV.text!, channelKey: channelKeyTV.text!, channelId: channelIdTV.text!,logo: UIImage.init(named: "robot")!,config: config, viewController: self)
+
             
         }
         

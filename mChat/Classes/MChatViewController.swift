@@ -27,6 +27,7 @@ class MChatViewController: UIViewController , WKUIDelegate, WKScriptMessageHandl
     var channelId : String? = nil
     var config : MConfig? = nil
     var logo : UIImage? = nil
+    var url = ""
     
     
     override func viewDidLoad() {
@@ -64,7 +65,7 @@ class MChatViewController: UIViewController , WKUIDelegate, WKScriptMessageHandl
 //                let url = URL(string: "https://www.google.com")
         
         
-        
+        self.url = "https://"+domain!+"/postman/ext/plugin/customer/app/chat/"
 
         webView?.load(URLRequest(url: url!))
         
@@ -118,6 +119,20 @@ class MChatViewController: UIViewController , WKUIDelegate, WKScriptMessageHandl
             self.webView?.evaluateJavaScript("callMobileEventListener("+script+");", completionHandler: nil)
         }
         
+    }
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+       //load cookie of current domain
+        self.webView!.loadDiskCookies(for: URL(string: self.url)!.host!){
+            decisionHandler(.allow)
+        }
+    }
+
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+       //write cookie for current domain
+        self.webView!.writeDiskCookies(for: URL(string: self.url)!.host!){
+            decisionHandler(.allow)
+        }
     }
     
     @IBAction func onCloseClicked(_ sender: Any) {
@@ -182,6 +197,75 @@ extension WKWebView {
             document.getElementsByTagName('head')[0].appendChild(meta);
         """) { result, error in
             // handle error
+        }
+    }
+    
+    enum PrefKey {
+        static let cookie = "cookies"
+    }
+
+    func writeDiskCookies(for domain: String, completion: @escaping () -> ()) {
+        fetchInMemoryCookies(for: domain) { data in
+            print("write data", data)
+            UserDefaults.standard.setValue(data, forKey: PrefKey.cookie + domain)
+            completion();
+        }
+    }
+
+
+     func loadDiskCookies(for domain: String, completion: @escaping () -> ()) {
+        if let diskCookie = UserDefaults.standard.dictionary(forKey: (PrefKey.cookie + domain)){
+            fetchInMemoryCookies(for: domain) { freshCookie in
+
+                let mergedCookie = diskCookie.merging(freshCookie) { (_, new) in new }
+
+                for (_, cookieConfig) in mergedCookie {
+                    let cookie = cookieConfig as! Dictionary<String, Any>
+
+                    var expire : Any? = nil
+
+                    if let expireTime = cookie["Expires"] as? Double{
+                        expire = Date(timeIntervalSinceNow: expireTime)
+                    }
+
+                    let newCookie = HTTPCookie(properties: [
+                        .domain: cookie["Domain"] as Any,
+                        .path: cookie["Path"] as Any,
+                        .name: cookie["Name"] as Any,
+                        .value: cookie["Value"] as Any,
+                        .secure: cookie["Secure"] as Any,
+                        .expires: expire as Any
+                    ])
+
+                    if #available(iOS 11.0, *) {
+                        self.configuration.websiteDataStore.httpCookieStore.setCookie(newCookie!)
+                    } else {
+                        // Fallback on earlier versions
+                    }
+                }
+
+                completion()
+            }
+
+        }
+        else{
+            completion()
+        }
+    }
+
+    func fetchInMemoryCookies(for domain: String, completion: @escaping ([String: Any]) -> ()) {
+        var cookieDict = [String: AnyObject]()
+        if #available(iOS 11.0, *) {
+            WKWebsiteDataStore.default().httpCookieStore.getAllCookies { (cookies) in
+                for cookie in cookies {
+                    if cookie.domain.contains(domain) {
+                        cookieDict[cookie.name] = cookie.properties as AnyObject?
+                    }
+                }
+                completion(cookieDict)
+            }
+        } else {
+            // Fallback on earlier versions
         }
     }
 }
